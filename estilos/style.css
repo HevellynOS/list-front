@@ -1,0 +1,247 @@
+@charset "UTF-8";
+/*comentario no css*/
+@font-face {
+	font-family: 'origintech';
+	src: url('../fontes/OriginTech\ personal\ use.ttf')format('truetype');
+	src: url('../fontes/OriginTech\ personal\ use.otf')format(opentype);
+
+}
+@font-face {
+	font-family: 'dream';
+	src: url('../fontes/Dream\ MMA.ttf') format('truetype');
+}
+
+
+:root{
+	--cor0:#94d5fd;
+	--cor1:#4fa8df;
+	--cor2:#0076BE;
+    --cor3:#023a5c;
+	--cor4:#f7c3b3;
+	--cor5:#FF4B14;
+	--corh1: #3D3D45;
+	--cor-destaque: #02024b;
+	--corlist: #cfe8f7;
+	--fonte-dream: 'dream';
+	--fonte-origin-tech: 'origintech';
+	--fonte-padrao: arial, helvetica, verdana, sans-serif;
+
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+
+body{
+	display: grid;
+	height: 100%;
+	width: 100%;
+	background-color: var(--cor0);
+	text-align: center;
+	place-items: center;
+	place-content: center;
+}
+
+.navbar-expand-lg{
+	background-image: linear-gradient(to top, var(--cor0), var(--cor3));
+	border-radius: 10px;
+	width: 100%;
+	max-width: 1300px;
+	min-width: 500px;
+}
+.navbar-brand>h1{
+	background-color: var(--cor4);
+	color: var(--cor2);
+	box-shadow: 2px 4px 3px  rgba(0, 0, 0, 0.486);
+	text-shadow: 4px 1px 4px rgba(0, 0, 0, 0.699);
+	font-family: var(--fonte-origin-tech);
+	font-size: 20px;
+	padding: 10px;
+	border-radius: 10px;
+	width: 50%;
+	max-width: 1000px;
+	min-width: 500px;
+}
+.nav-item{
+	color: rgb(0, 0, 0);
+	font-family: var(--fonte-origin-tech);
+	padding: 5px;
+	border-radius: 20px;
+}
+
+
+.nav-item:hover{
+	color: red;
+	font-family: var(--fonte-origin-tech);
+	padding: 5px;
+	border-radius: 20px;
+
+
+}
+
+
+#showcase-container-x>h1{
+	background: var(--corlist);
+	color: var(--cor3);
+	box-shadow: 2px 4px 3px  rgba(0, 0, 0, 0.486);
+	text-shadow: 2px 2px 3px black;
+	font:  bolder 3em var(--fonte-origin-tech);
+	padding: 10px;
+	border-radius: 10px;
+	text-align: center;
+	width: 100%;
+}
+#showcase-container-x>p {
+	font-style: var(--fonte-padrao);
+	font-size: 20px;
+	text-indent: 30px;
+
+}
+
+h1{
+	color: var(--cor-destaque);
+	font-family: var(--fonte-dream);
+	font-size: 25px;
+	border-top-right-radius: 10px;
+	border-top-left-radius: 10px;
+
+}
+main{
+	background-color: rgb(255, 255, 255);
+	width: 100%;
+	height: 100%;
+	padding: 40px;
+	border-radius: 20px;
+	margin: auto;
+}
+
+main p {
+	font-style: var(--fonte-padrao);
+	font-size: 20px;
+	text-indent: 30px;
+
+}
+aside ol {
+	list-style-position: inside;
+}
+
+
+h2{
+	font-family: var(--fonte-origin-tech);
+	color: var(--cor3);
+	align-items: center;
+	list-style-position:inherit;
+}
+
+h3{
+	font-style: var(--fonte-padrao);
+	color: var(--cor5);
+	font-size: 30px;
+}
+img {
+	display: block;
+	max-width: 100%;
+	height: 200px;
+	width: 150px;
+	object-fit: cover;
+
+  }
+
+ 
+
+.voltar{
+	font-weight: bolder;
+
+}
+.voltar:active{
+	color: rgb(255, 0, 0);
+	font-weight: bolder;
+
+}
+strong{
+	font-size: 20px;
+	color: var(--cor0);
+	background-color: var(--cor-destaque);
+	padding: 10px;
+	border-radius: 10px;
+	
+}
+
+.lista{
+	background-image: linear-gradient(to top, var(--corlist), var(--cor1));
+	border: solid;
+	border-radius: 10px;
+	box-shadow: 2px 4px 3px  rgba(0, 0, 0, 0.418);
+	align-items: center;
+	margin: 20px;
+
+}
+/*background-image: linear-gradient(to top, var(--corlist), var(--cor1));*/
+
+.accordion-item{
+		font-size: 20px;
+		align-items: center;
+		text-indent: 30px;
+}
+
+.accordion-button{
+	background-color: #409BE7;
+	
+}
+.accordion-header{
+    margin-bottom: 10px;
+    border: solid;
+	box-shadow: 0px 10px 15px black;
+}
+
+.videos{
+	max-width: 400px;
+	height: 200px;
+	min-width: 300px;
+
+}
+
+
+.clique {
+	font-style: strong;
+	color: var(--cor5);
+	background: var(--cor3);
+	padding: 0% 10%;
+	border-radius: 20px;
+}
+.clique:hover{
+	color: red;
+	background: #fa9f9f;
+	padding: 0% 10%;
+	border-radius: 20px;
+}
+
+footer{
+	background-color: var(--cor3);
+	color: white;
+}
+
+
+.algoritmo{
+	display: inline-block;
+	padding: 10px;
+	border-radius: 20px;
+	border: solid rgba(0, 0, 0, 0.308);
+	box-shadow: 10px 5px 20px rgba(0, 0, 0, 0.473);
+}
+
+
+.imagem__css {
+	background-color: blue;
+	box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.384);
+	border-radius: 20px;
+	max-width: 400px;
+	min-width: 320px;
+	transform: translate(100px, 20px);
+
+}

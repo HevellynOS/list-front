@@ -1,0 +1,114 @@
+@charset "UTF-8" = (para nao ter erro de pontuçao)
+
+@import url = (importar de algum site especifico para o seu projeto)
+   
+@font-face = (importar font de dentro do seu computador){
+    formatos(format): 
+    otf (opentype), 
+    ttf (truetype) , 
+    embedded-opentype, 
+    trutyp-aat (apple advanced typograph),
+    svg,
+}
+/*
+	# = id
+	. = class
+	: = pseudo-class
+ 	:: = pseudo-element
+	> = children
+*/
+
+
+<h2>shorthand \/\/\/</h2>
+<p>
+    font: style > weight > size > family ;
+    
+    border + outline : width > style > color;
+    
+    padding : top > right > bottom > left;
+
+    tamanhos iguais usar apenas uma medida;
+    duas medidas para representar top + bottom e left + right ;
+</p>
+
+
+ <h2>Para adicionar imagens como borda, <recomendado> tamanho da imagem: 800width 800height</recomendado></h2>
+    <p>
+        border-image-source: url('border.png');
+            border-image-slice: 20px;
+            border-image-repeat: repeat;
+        shorthand:source> slice> repeat
+    </p>
+
+    <p>box-shadow: adicionar sombra </p>
+	<p>border-radius: para arredondar as bordas;</p>
+
+
+<picture> 
+
+	<picture class="imagem">
+		<source media="(max-width: 700px)" srcset="imagens/foto-p.jpg" type="image/png">
+		<source media="(max-width: 1050px)" srcset="imagens/foto-m.jpg"type="image/png">>
+		<img src="imagens/foto-g.jpg" alt="imagens flexiveis"> -"usamos essas conf, e imagens editadas com esses valores, para a imagem variar altomaticamente de tamanhos como G,M e P.
+        Conforme o tamanho da tela do usuaria (exemplos de telas, celular, computador ou tv)"
+	</picture>
+	
+	<img class="fundo" src="imagens/foto.jpg">
+
+
+    <h2>dicas usar:</h2>
+        <p>* { } para indicar o conteudo todo da pagina, suas paginas vem com configurações prontas naturalmente, usando esse codigo podemos apagar todas as formatações naturais em padding, margin, etc.</p>
+
+    <h2> CSS codigos: </h2>
+        <p>
+            width : largura;   = variaçoes max - min
+            width x height = 1000 x 1000
+            height : altura;   = variaçoes max - min
+            margin : margem
+            border : borda
+            padding : espaçamento
+        </p>
+
+        .extra{
+	display: contents;
+}
+.extra__conteudo__imagem{
+	max-width: 300px;
+	min-width: 150px;
+	height: 200px;
+	box-shadow: 0px 15px 15px rgba(0, 0, 0, 0.541);
+	border-top: 3px solid var(--cor3);
+	border-left: 3px solid var(--cor3);
+	border-right: 3px solid var(--cor3);
+	border-top-right-radius: 10px;
+	border-top-left-radius: 10px;
+}
+.extra__conteudo__css{
+	background-color: #4FA8DF;
+	padding: 15px;
+	border-radius: 20px;
+	border: 3px solid var(--cor3);
+}
+.extra__conteudo__html{
+	background-color: #FF4B14;
+	padding: 15px;
+	border-radius: 20px;
+	border: 3px solid var(--cor3);
+}
+.extra__conteudo__javascript{
+	background-color: yellow;
+	padding: 15px;
+	border-radius: 20px;
+	border: 3px solid var(--cor3);
+}
+
+
+<div class="list-group">
+  <a href="#" class="list-group-item list-group-item-action active" aria-current="true">
+    The current link item
+  </a>
+  <a href="#" class="list-group-item list-group-item-action">A second link item</a>
+  <a href="#" class="list-group-item list-group-item-action">A third link item</a>
+  <a href="#" class="list-group-item list-group-item-action">A fourth link item</a>
+  <a class="list-group-item list-group-item-action disabled">A disabled link item</a>
+</div>
