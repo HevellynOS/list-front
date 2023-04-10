@@ -86,7 +86,7 @@ body{
 }
 
 
-#showcase-container-x>h1{
+#title>h1{
 	background: var(--corlist);
 	color: var(--cor3);
 	box-shadow: 2px 4px 3px  rgba(0, 0, 0, 0.486);
@@ -99,7 +99,7 @@ body{
 	
 
 }
-#showcase-container-x>p {
+#title>p {
 	font-style: var(--fonte-padrao);
 	font-size: 20px;
 	text-indent: 30px;
