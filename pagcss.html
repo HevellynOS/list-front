@@ -4,48 +4,73 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="imagens/favicon.ico">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
     <title> CSS </title>
     <link rel="stylesheet" href="estilos/style.css">
-    <link rel="icon" href="imagens/favicon.ico">
+    <link rel="stylesheet" href="estilos/pagcss.css">
+    
 </head>
 
 
 
 <body>  
     <header>
-        <h1>cascading style sheets : </h1> <hr>
-    
+        <div id="title">
+            <h1>cascading style sheets : </h1>
+        </div>
+        <p> CSS é um mecanismo para adicionar estilos, cores, fontes, espaçamento a uma página web ou aplicativos, aplicado diretamente nas tags HTML ou ficam contido dentro das tags style. </p>
     </header>
 
     
-    <main>
-        <article>
-            
-                <p> CSS é um mecanismo para adicionar estilos, cores, fontes, espaçamento a uma página web ou aplicativos, aplicado diretamente nas tags HTML ou ficam contido dentro das tags style, um programador css tem como responsabilidade saber o minímo de design, como: </p>
-                <aside>
-                     <ol type = "I">
-                        <li> Psicologia das Cores </li>
-                        <li>Hexadecimal, RGB, HSL</li>
-                        <li>Tipografia</li>
-                    </ol>
-                </aside>
-            
-                <h1 id="principal">listas de codigos</h1>
-                  <p>
-                    <div class="lista"> <h1>codigos de comando:</h1>
-                            <section class="lista__conteudo">
-                                <h3>@charset "UTF-8"</h3>formatação importante para não ter erros de acentuação
-                                <h3>@font-face</h3>importar font de dentro do seu computador
-                                <h3>@import url</h3>  importar de algum site especifico para o seu projeto
-                            </section>
-                      </div>
-                  </p>
-
-            
-            
+    <main id="container-fluid">
+        <aside id="extra">
+            <p><strong> Ao trabalhar com css temos como responsabilidade saber o minímo de design, como: </strong></p>
+             <div class="extra-lista">
+                 <ol style="margin-top: 10px;" type="I">
+                    <li> Psicologia das Cores </li>
+                    <li>Hexadecimal, RGB, HSL</li>
+                    <li>Tipografia</li>
+                </ol>
+             </div> 
+    
             <p><a class="pag" href="index.html">clique aqui</a> para voltar</p>
-            
-        </article>
+        </section>
+
+        <section>
+            <div class="text-hidden-all">
+                <h1>codigos</h1>
+                <div class="text-hidden">
+                    <p> Aqui temos os codigos importantes para implementar  seu css</p>
+                    
+                <div class="code-hidden">
+                    <ol>
+                        <h3>Regra At</h3>
+                            <p>Uma regra at (at-rule) é uma CSS statement iniciando com um caractere arroba, '@', seguido por um indetificador e terminando no primeiro ponto e vírgula';', fora de um bloco, ou no fim do primeiro Bloco CSS.</p>
+
+                        <li><code>@charset: </code>definindo o conjunto de caracteres (codificação) usado pela folha de estilos.</li>
+                        <li><code>@import: </code>informando o motor CSS para incluir uma folha de estilos externa.</li>
+                        <li><code>@media: </code>um grupo de regras condicional que é aplicado ao conteúdo caso o dispositivo de exibição cumpra com a condição de mídia definida.</li>
+                        <li><code>@font-face: </code>descrevendo o aspecto de uma fonte externa que deve ser baixada.</li>
+                        <li><code>@document: </code> um grupo de regras condicional que é aplicado ao conteúdo caso o documento cumpra com os critério definidos.</li>
+                        <li><code>@supports: </code>um grupo de regras condicional que é aplicado caso o navegador cumpra com os critérios definidos.</li>
+                    </ol>
+                </div>
+
+
+
+
+                </div>
+            </div>
+
+
+
+
+
+
+
+        </section>
     </main>
 </body>
 </html>

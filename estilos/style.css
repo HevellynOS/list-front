@@ -38,9 +38,9 @@
 
 
 body{
-	display: grid;
 	height: 100%;
 	width: 100%;
+	padding: 10px;
 	background-color: var(--cor0);
 	text-align: center;
 	place-items: center;
@@ -49,10 +49,10 @@ body{
 
 .navbar-expand-lg{
 	background-image: linear-gradient(to top, var(--cor0), var(--cor3));
-	border-radius: 10px;
+	border-top-right-radius: 10px;
+	border-top-left-radius: 10px;
 	width: 100%;
-	max-width: 1300px;
-	min-width: 500px;
+
 }
 .navbar-brand>h1{
 	background-color: var(--cor4);
@@ -63,10 +63,6 @@ body{
 	font-size: 20px;
 	padding: 10px;
 	border-radius: 10px;
-	width: 50%;
-	max-width: 1000px;
-	min-width: 500px;
-	width: 100%;
 }
 .nav-item{
 	color: rgb(0, 0, 0);
@@ -84,6 +80,12 @@ body{
 
 
 }
+header #title{
+	display: flex;	
+	align-items: center;
+	justify-content: center;
+	
+}
 
 
 #title>h1{
@@ -91,15 +93,18 @@ body{
 	color: var(--cor3);
 	box-shadow: 2px 4px 3px  rgba(0, 0, 0, 0.486);
 	text-shadow: 2px 2px 3px black;
-	font:  bolder 3em var(--fonte-origin-tech);
+	font:  bolder 2em var(--fonte-origin-tech);
 	padding: 10px;
 	border-radius: 10px;
 	text-align: center;
-	width: 100%;
+	width: 80%;
 	
 
+
+
+
 }
-#title>p {
+header p {
 	font-style: var(--fonte-padrao);
 	font-size: 20px;
 	text-indent: 30px;
@@ -175,10 +180,8 @@ img {
 
 }
 strong{
-	font-size: 20px;
-	color: var(--cor0);
-	background-color: var(--cor-destaque);
-	padding: 10px;
+	font: 500 30px black;
+	background-color: var(--cor0);
 	border-radius: 10px;
 	
 }
