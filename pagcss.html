@@ -24,7 +24,7 @@
     </header>
 
     
-    <main id="container-fluid">
+    <main>
         <aside id="extra">
             <p><strong> Ao trabalhar com css temos como responsabilidade saber o minímo de design, como: </strong></p>
              <div class="extra-lista">
@@ -40,15 +40,16 @@
 
         <section>
             <div class="text-hidden-all">
-                <h1>codigos</h1>
-                <div class="text-hidden">
+                <button onclick="dropAll()" class="dropbtn">codigos</button>
+                <div id="exDropdownAll" class="dropdownall-content">
                     <p> Aqui temos os codigos importantes para implementar  seu css</p>
-                    
-                <div class="code-hidden">
+                
+                        <button onclick="show('textDiscover')" class="dropbtn2"><h3>Regra At</h3></button>
+                </div>
+            </div>
+                <div id="textDiscover">
+                    <p>Uma regra at (at-rule) é uma CSS statement   iniciando com um caractere arroba, '@', seguido por um indetificador e terminando no primeiro ponto e vírgula';', fora de um bloco, ou no fim do primeiro Bloco CSS.</p>
                     <ol>
-                        <h3>Regra At</h3>
-                            <p>Uma regra at (at-rule) é uma CSS statement iniciando com um caractere arroba, '@', seguido por um indetificador e terminando no primeiro ponto e vírgula';', fora de um bloco, ou no fim do primeiro Bloco CSS.</p>
-
                         <li><code>@charset: </code>definindo o conjunto de caracteres (codificação) usado pela folha de estilos.</li>
                         <li><code>@import: </code>informando o motor CSS para incluir uma folha de estilos externa.</li>
                         <li><code>@media: </code>um grupo de regras condicional que é aplicado ao conteúdo caso o dispositivo de exibição cumpra com a condição de mídia definida.</li>
@@ -56,22 +57,11 @@
                         <li><code>@document: </code> um grupo de regras condicional que é aplicado ao conteúdo caso o documento cumpra com os critério definidos.</li>
                         <li><code>@supports: </code>um grupo de regras condicional que é aplicado caso o navegador cumpra com os critérios definidos.</li>
                     </ol>
-                </div>
-
-
-
-
-                </div>
-            </div>
-
-
-
-
-
-
-
+                </div> 
         </section>
     </main>
+    <script src="js/drop.js"></script>
+    <script src="js/texthide.js"></script>
 </body>
 </html>
 
