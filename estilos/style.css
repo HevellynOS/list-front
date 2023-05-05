@@ -46,6 +46,9 @@ body{
 	place-items: center;
 	place-content: center;
 }
+html {
+	font-size: 62.5%;
+}
 
 .navbar-expand-lg{
 	background-image: linear-gradient(to top, var(--cor0), var(--cor3));
@@ -60,7 +63,7 @@ body{
 	box-shadow: 2px 4px 3px  rgba(0, 0, 0, 0.486);
 	text-shadow: 4px 1px 4px rgba(0, 0, 0, 0.699);
 	font-family: var(--fonte-origin-tech);
-	font-size: 20px;
+	font-size: 3rem;
 	padding: 10px;
 	border-radius: 10px;
 }
@@ -69,6 +72,7 @@ body{
 	font-family: var(--fonte-origin-tech);
 	padding: 5px;
 	border-radius: 20px;
+	font-size: 2rem;
 }
 
 
@@ -93,7 +97,7 @@ header #title{
 	color: var(--cor3);
 	box-shadow: 2px 4px 3px  rgba(0, 0, 0, 0.486);
 	text-shadow: 2px 2px 3px black;
-	font:  bolder 2em var(--fonte-origin-tech);
+	font:  bolder 3rem var(--fonte-origin-tech);
 	padding: 10px;
 	border-radius: 10px;
 	text-align: center;
@@ -130,11 +134,12 @@ main{
 	padding: 40px;
 	border-radius: 20px;
 	margin: auto;
+	font-size: 1.5rem;
 }
 
 main p {
 	font-style: var(--fonte-padrao);
-	font-size: 20px;
+	font-size: 0.5rem;
 	text-indent: 30px;
 
 }
@@ -153,7 +158,7 @@ h2{
 h3{
 	font-style: var(--fonte-padrao);
 	color: var(--cor5);
-	font-size: 30px;
+	font-size: 3rem;
 }
 img {
 	display: block;
@@ -191,10 +196,17 @@ strong{
 	margin: 20px;
 
 }
-/*background-image: linear-gradient(to top, var(--corlist), var(--cor1));*/
+.lista u {
+	font-size: 2rem;
 
+}
+
+.accordion.body{
+	font-size: 1rem;
+	
+}
 .accordion-item{
-		font-size: 20px;
+		font-size: 2rem;
 		align-items: center;
 		text-indent: 30px;
 }
@@ -254,4 +266,15 @@ footer{
 	min-width: 320px;
 	transform: translate(100px, 20px);
 
+}
+@media (max-width: 410px){
+	html {
+		font-size: 40%;
+	}
+}
+
+@media(max-width: 320px){
+	html{
+		font-size: 30%;
+	}
 }
