@@ -55,6 +55,8 @@ html {
 	border-top-right-radius: 10px;
 	border-top-left-radius: 10px;
 	width: 100%;
+	max-width: max-content;
+	min-width: none;
 
 }
 .navbar-brand>h1{
