@@ -35,13 +35,6 @@
   margin: 0;
   padding: 0;
 }
-header{
-
-
-
-}
-
-
 body{
 	display: grid;
 	height: 100%;
@@ -51,6 +44,26 @@ body{
 	place-items: center;
 	place-content: center;
 }
+
+header{
+	background-color: var(--cor0);
+	width: 100%;
+	display: flex;
+
+}
+nav{
+	width: 100%;
+	background-color: var(--cor2);
+	
+}
+#menu a{
+	text-decoration: none;
+	color: var(--cor0);
+	
+}
+
+
+
 #title>h1{
 	background: var(--corlist);
 	color: var(--cor3);
@@ -70,33 +83,5 @@ body{
 	text-indent: 30px;
 
 }
-.nav_menu{
-    display: flex;
-    justify-content: flex-end;
-    
-}
 
-.nav_menu_collapsible{
-    cursor: pointer;
-
-}
-.nav_menu_collapsible h3{
-    margin: 0;
-    padding: 10px;
-    background-color: var(--corlist);
-
-}
-.nav_menu_collapsible.active h3{
-    background-attachment: var(--cor3);
-}
-.content{
-    display: none;
-}
-.active .content{
-    display: block;
-    background-color: var(--cor-destaque);
-    padding: 10px;
-
-
-}
 
